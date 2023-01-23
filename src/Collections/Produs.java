@@ -10,7 +10,7 @@ public class Produs implements Comparable<Produs> {
     private int pret;
 
     public Produs(String denumire, String marca, String model, int nrStoc, int an, int pret) {
-        
+
         this.denumire = denumire;
         this.marca = marca;
         this.model = model;

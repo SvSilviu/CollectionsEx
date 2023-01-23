@@ -66,4 +66,41 @@ public class Controller {
 
     }
 
+    public Produs ProdusulCelMaiIeftin() {
+
+        return Collections.min(listaProduse, new CompareProductByPret());
+    }
+
+    public void afisareInversa() {
+
+        ArrayList<Produs> listaInversa = new ArrayList<>(listaProduse);
+
+        Collections.sort(listaInversa, Collections.reverseOrder(new CompareProductByPret()));
+        for (Produs p : listaInversa) {
+            System.out.println(p);
+        }
+    }
+
+    public void shuffle() {
+        Collections.sort(listaProduse);
+
+        for (Produs p : listaProduse) {
+            System.out.println(p);
+        }
+    }
+
+    public Produs produsulCuCelMaiMareStock() {
+
+        return Collections.max(listaProduse, new CompareProductByStock());
+
+    }
+
+    public void schimbareLocInLista(int produs1, int produs2) {
+
+        Collections.swap(listaProduse, produs1, produs2);
+        for (Produs p : listaProduse) {
+            System.out.println(p);
+        }
+    }
+
 }
