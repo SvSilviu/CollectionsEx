@@ -1,0 +1,5 @@
+Telefon,Samsung,Galaxy S10,50,2019,4000
+Telefon,Iphone,13 ProMax,35,2022,6800
+Laptop,Acer,Predator,5,2020,5600
+Laptop,MacBook,Pro,9,2022,8000
+Ceas,Rolex,Yacht Master II,2,2018,18000
