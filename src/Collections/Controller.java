@@ -47,22 +47,22 @@ public class Controller {
 
     public Produs produsulCelMaiScump() {
 
-       return Collections.max(listaProduse, new CompareProductByPret());
+        return Collections.max(listaProduse, new CompareProductByPret());
     }
 
     //todo functie ce primeste ca parametru numele produsului si verifica\ daca exista produsul in lista
 
-    public Produs findProductByName(String nume){
+    public Produs findProductByName(String nume) {
 
-        Collections.sort(listaProduse,new CompareProductByDenumire());
-        int poz=Collections.binarySearch(listaProduse,new Produs(nume,"","",0,0,0),new CompareProductByDenumire());
+        Collections.sort(listaProduse, new CompareProductByDenumire());
+        int poz = Collections.binarySearch(listaProduse, new Produs(nume, "", "", 0, 0, 0), new CompareProductByDenumire());
 
-        if(poz!=-1){
+        if (poz != -1) {
 
-            return  this.listaProduse.get(poz);
+            return this.listaProduse.get(poz);
         }
 
-     return null;
+        return null;
 
     }
 

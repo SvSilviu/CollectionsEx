@@ -5,7 +5,6 @@ import org.testng.annotations.Test;
 import java.util.ArrayList;
 
 public class ControllerTest {
-
     @Test
     public void testController(){
 
