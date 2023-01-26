@@ -1,5 +1,5 @@
-import Collections.Controller;
-import Collections.Produs;
+import Collections.produse.ControllerProduse;
+import Collections.produse.Produs;
 import org.testng.annotations.Test;
 
 public class ControllerTest {
@@ -8,7 +8,7 @@ public class ControllerTest {
 
         Produs produs = new Produs();
 
-        Controller controller = new Controller();
+        ControllerProduse controllerProduse = new ControllerProduse();
 //        controller.afisare();
 //        System.out.println(controller.produsulCelMaiScump());
 //        System.out.println(controller.findProductByName("Ceas"));
@@ -16,7 +16,7 @@ public class ControllerTest {
 //        controller.afisareInversa();
 //        controller.shuffle();
 //        System.out.println(controller.produsulCuCelMaiMareStock());
-        controller.schimbareLocInLista(3, 2);
+        controllerProduse.schimbareLocInLista(3, 2);
 
     }
 

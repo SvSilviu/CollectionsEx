@@ -1,17 +1,17 @@
-package Collections;
+package Collections.produse;
 
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
 
-public class Controller {
+public class ControllerProduse {
 
     private ArrayList<Produs> listaProduse;
     private Scanner scanner;
 
 
-    public Controller() {
+    public ControllerProduse() {
 
 
         listaProduse = new ArrayList<>();
