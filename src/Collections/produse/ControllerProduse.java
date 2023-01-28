@@ -15,22 +15,20 @@ public class ControllerProduse {
 
 
         listaProduse = new ArrayList<>();
-
         this.load();
     }
 
     public void load() {
 
-        listaProduse = new ArrayList<>();
         try {
-            File file = new File("C:\\mycode\\collections\\Initiere\\src\\data\\produse.txt");
-            scanner = new Scanner(file);
-            while (scanner.hasNextLine()) {
+            File file = new File("C:\\mycode\\collections\\Initiere\\src\\Collections\\produse\\data\\produse.txt");
+            this.scanner = new Scanner(file);
+            while (scanner.hasNext()) {
                 String linie = scanner.nextLine();
                 listaProduse.add(new Produs(linie));
             }
         } catch (Exception e) {
-
+            e.printStackTrace();
         }
 
 
@@ -38,8 +36,8 @@ public class ControllerProduse {
 
     public void afisare() {
 
-        for (Produs p : listaProduse) {
-            System.out.println(p);
+        for (Produs produs : listaProduse) {
+            System.out.println(produs);
         }
     }
 
@@ -71,18 +69,19 @@ public class ControllerProduse {
         return Collections.min(listaProduse, new CompareProductByPret());
     }
 
-    public void afisareInversa() {
+    public void afisarePretDescarcator() {
 
         ArrayList<Produs> listaInversa = new ArrayList<>(listaProduse);
 
         Collections.sort(listaInversa, Collections.reverseOrder(new CompareProductByPret()));
         for (Produs p : listaInversa) {
-            System.out.println(p);
+            System.out.println(p.toString());
         }
     }
 
-    public void shuffle() {
-        Collections.sort(listaProduse);
+    public void shuffle(int a, int b) {
+
+        Collections.shuffle(listaProduse);
 
         for (Produs p : listaProduse) {
             System.out.println(p);

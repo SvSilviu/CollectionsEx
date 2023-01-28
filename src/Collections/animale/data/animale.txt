@@ -1,0 +1,7 @@
+Pisica,Tom,Mascul,3
+Caine,Thor,Mascul,1
+Hamster,Jerry,Mascul,1
+Caine,Alma,Femela,2
+Cal,Lucky,Mascul,3
+Caine,Doris,Femela,10
+Pisica,Ela,Femela,7

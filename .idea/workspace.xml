@@ -2,18 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="375c918d-e063-4d85-b68f-f569594f9d52" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Test/Collections/masini/ControlMasiniTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/Collections/animale/ControlAnimalTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/Collections/persoane/ControlPerosanaTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Collections/animale/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Collections/animale/CompareAnimalByDenumire.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Collections/animale/CompareAnimalByNume.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Collections/animale/CompareAnimalBySex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Collections/animale/ControlAnimal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Collections/animale/Sex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Collections/animale/data/animale.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Collections/persoane/ComparePersoanaByAdresa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Collections/persoane/ComparePersoanaByNume.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Collections/persoane/ComparePersoanaByPrenume.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Collections/persoane/ControlPerosana.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Collections/persoane/Persoana.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Collections/persoane/data/persoane.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Collections/masini/ControlMasiniTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Collections/masini/ControlMasiniTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test/Collections/produse/ControllerProduseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Collections/produse/ControllerProduseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/ControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/ControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Collections/CompareProductByDenumire.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collections/produse/CompareProductByDenumire.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Collections/CompareProductByMarca.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collections/produse/CompareProductByMarca.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Collections/CompareProductByModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collections/produse/CompareProductByModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Collections/CompareProductByPret.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collections/produse/CompareProductByPret.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Collections/CompareProductByStock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collections/produse/CompareProductByStock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Collections/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collections/produse/ControllerProduse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Collections/Produs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collections/produse/Produs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/produse.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collections/produse/data/produse.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/ControllerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Collections/masini/CompareMasiniByMarca.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collections/masini/CompareMasiniByMarca.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Collections/masini/CompareMasiniByModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collections/masini/CompareMasiniByModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Collections/masini/CompareMasiniByPret.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collections/masini/CompareMasiniByPret.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Collections/masini/ControlMasini.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collections/masini/ControlMasini.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Collections/masini/Masina.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collections/masini/Masina.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Collections/masini/data/masini.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collections/masini/data/masini.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Collections/produse/ControllerProduse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collections/produse/ControllerProduse.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +38,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
         <option value="JUnit5 Test Class" />
       </list>
@@ -41,44 +56,123 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "C:/mycode/collections/Initiere"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/mycode/oop/incapsualrea/proiectScoala&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="Collections.produse" />
+      <recent name="Collections.masini" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="Collections.persoane" />
+      <recent name="Collections.animale" />
+      <recent name="Collections.masini" />
+      <recent name="Collections.produse" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.ControlPerosanaTest.byPrenumeTest">
+    <configuration name="ControlAnimalTest.bySexTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Initiere" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Collections.animale.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Collections.animale" />
+      <option name="MAIN_CLASS_NAME" value="Collections.animale.ControlAnimalTest" />
+      <option name="METHOD_NAME" value="bySexTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ControllerTest.testController" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ControlAnimalTest.controlAnimalTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Initiere" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ControllerTest" />
-      <option name="METHOD_NAME" value="testController" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Collections.animale.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Collections.animale" />
+      <option name="MAIN_CLASS_NAME" value="Collections.animale.ControlAnimalTest" />
+      <option name="METHOD_NAME" value="controlAnimalTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ControlPerosanaTest.ByNumeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Initiere" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Collections.persoane.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Collections.persoane" />
+      <option name="MAIN_CLASS_NAME" value="Collections.persoane.ControlPerosanaTest" />
+      <option name="METHOD_NAME" value="ByNumeTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ControlPerosanaTest.byAdresaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Initiere" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Collections.persoane.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Collections.persoane" />
+      <option name="MAIN_CLASS_NAME" value="Collections.persoane.ControlPerosanaTest" />
+      <option name="METHOD_NAME" value="byAdresaTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ControlPerosanaTest.byPrenumeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Initiere" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Collections.persoane.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Collections.persoane" />
+      <option name="MAIN_CLASS_NAME" value="Collections.persoane.ControlPerosanaTest" />
+      <option name="METHOD_NAME" value="byPrenumeTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="TestNG.ControllerTest.testController" />
+        <item itemvalue="JUnit.ControlPerosanaTest.byPrenumeTest" />
+        <item itemvalue="JUnit.ControlPerosanaTest.ByNumeTest" />
+        <item itemvalue="JUnit.ControlPerosanaTest.byAdresaTest" />
+        <item itemvalue="JUnit.ControlAnimalTest.controlAnimalTest" />
+        <item itemvalue="JUnit.ControlAnimalTest.bySexTest" />
       </list>
     </recent_temporary>
   </component>
@@ -104,5 +198,61 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1st commit in collections" />
     <option name="LAST_COMMIT_MESSAGE" value="1st commit in collections" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Initiere$ControlMasiniTest_test.ic" NAME="ControlMasiniTest.test Coverage Results" MODIFIED="1674846590400" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Collections.masini.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Initiere$ControlMasiniTest_byMarcaTest.ic" NAME="ControlMasiniTest.byMarcaTest Coverage Results" MODIFIED="1674848997964" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Collections.masini.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Initiere$ControlMasiniTest_byModel.ic" NAME="ControlMasiniTest.byModel Coverage Results" MODIFIED="1674851879899" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Collections.masini.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Initiere$ControlPerosanaTest_ByNumeTest.ic" NAME="ControlPerosanaTest.ByNumeTest Coverage Results" MODIFIED="1674919636285" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Collections.persoane.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Initiere$ControllerProduseTest_byDenumireTest.ic" NAME="ControllerProduseTest.byDenumireTest Coverage Results" MODIFIED="1674852759445" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Collections.produse.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Initiere$ControllerProduseTest_byStockTest.ic" NAME="ControllerProduseTest.byStockTest Coverage Results" MODIFIED="1674853439941" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Collections.produse.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Initiere$ControlAnimalTest_byNumeTest.ic" NAME="ControlAnimalTest.byNumeTest Coverage Results" MODIFIED="1674915437492" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Collections.animale.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Initiere$ControlPerosanaTest_byPrenumeTest.ic" NAME="ControlPerosanaTest.byPrenumeTest Coverage Results" MODIFIED="1674919735177" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Collections.persoane.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Initiere$ControllerProduseTest_controllerProduseTest.ic" NAME="ControllerProduseTest.controllerProduseTest Coverage Results" MODIFIED="1674853544749" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Collections.produse.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Initiere$ControllerProduseTest_byMarcaTest.ic" NAME="ControllerProduseTest.byMarcaTest Coverage Results" MODIFIED="1674852951570" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Collections.produse.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Initiere$ControlAnimalTest_byDenumireTest.ic" NAME="ControlAnimalTest.byDenumireTest Coverage Results" MODIFIED="1674915296606" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Collections.animale.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Initiere$ControlMasiniTest.ic" NAME="ControlMasiniTest Coverage Results" MODIFIED="1674852082079" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Collections.masini.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Initiere$ControlMasiniTest_byAnTest.ic" NAME="ControlMasiniTest.byAnTest Coverage Results" MODIFIED="1674852266447" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Collections.masini.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Initiere$ControllerProduseTest_byPretTest.ic" NAME="ControllerProduseTest.byPretTest Coverage Results" MODIFIED="1674853361888" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Collections.produse.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Initiere$ControlAnimalTest_bySexTest.ic" NAME="ControlAnimalTest.bySexTest Coverage Results" MODIFIED="1674916460541" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Collections.animale.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Initiere$ControlMasiniTest_byPretTest.ic" NAME="ControlMasiniTest.byPretTest Coverage Results" MODIFIED="1674852046664" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Collections.masini.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Initiere$ControllerProduseTest_byModelTest.ic" NAME="ControllerProduseTest.byModelTest Coverage Results" MODIFIED="1674853060832" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Collections.produse.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Initiere$ControlPerosanaTest_byAdresaTest.ic" NAME="ControlPerosanaTest.byAdresaTest Coverage Results" MODIFIED="1674919552296" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Collections.persoane.*</FILTER>
+    </SUITE>
   </component>
 </project>
