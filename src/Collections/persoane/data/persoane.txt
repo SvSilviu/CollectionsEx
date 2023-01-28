@@ -1,0 +1,5 @@
+Vasile,Andrei,Bucuresti,50
+Ion,Mihalache,Giurgiu,30
+Popescu,Ion,Oradea,45
+Manole,Adrian,Timisoara,29
+Petrascu,Ionut,Bacau,40

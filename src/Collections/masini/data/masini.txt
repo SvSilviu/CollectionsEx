@@ -1,0 +1,4 @@
+Dacia,Logan,2020,15
+Bmw,Seria 5,2019,34
+Audi,A6,2022,30
+VW,Passat,2017,28
