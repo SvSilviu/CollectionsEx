@@ -8,12 +8,12 @@ import java.util.Scanner;
 public class ControlAnimal {
 
     private Scanner scanner;
-    private ArrayList<Animal> animals = new ArrayList<>();
+    private ArrayList<Animal> animals;
 
     public ControlAnimal() {
 
-       this.load();
-
+        animals = new ArrayList<>();
+        this.load();
     }
 
     public void load() {

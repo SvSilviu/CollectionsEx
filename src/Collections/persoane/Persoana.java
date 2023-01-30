@@ -65,7 +65,6 @@ public class Persoana implements Comparable<Persoana> {
         return this.varsta == ((Persoana) o).varsta && this.nume.equals(((Persoana) o).nume) && this.prenume.equals(((Persoana) o).prenume);
     }
 
-
     @Override
     public int compareTo(Persoana o) {
         if (this.varsta > o.varsta) {
