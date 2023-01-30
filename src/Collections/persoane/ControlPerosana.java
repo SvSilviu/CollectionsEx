@@ -13,6 +13,7 @@ public class ControlPerosana {
     public ControlPerosana() {
 
         listaDePersoane = new ArrayList<>();
+        this.load();
     }
 
     public void load() {
