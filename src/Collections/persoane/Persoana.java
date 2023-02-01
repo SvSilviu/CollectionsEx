@@ -1,4 +1,4 @@
-package Collections.persoane;
+package collections.persoane;
 
 public class Persoana implements Comparable<Persoana> {
 
@@ -56,7 +56,7 @@ public class Persoana implements Comparable<Persoana> {
 
     @Override
     public String toString() {
-        return "Nume -" + nume + "\n" + "Prenume -" + prenume + "\n" + "Adresa -" + adresa + "\n" + "Varsta -" + varsta;
+        return "Nume - " + nume + "\n" + "Prenume - " + prenume + "\n" + "Adresa - " + adresa + "\n" + "Varsta - " + varsta+"\n";
     }
 
     @Override

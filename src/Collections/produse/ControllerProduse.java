@@ -1,4 +1,4 @@
-package Collections.produse;
+package collections.produse;
 
 import java.io.File;
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package Collections.masini;
+package collections.masini;
 
 import org.junit.jupiter.api.Test;
 

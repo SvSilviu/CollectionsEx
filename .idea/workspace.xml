@@ -2,32 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="375c918d-e063-4d85-b68f-f569594f9d52" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Test/Collections/animale/ControlAnimalTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/Collections/persoane/ControlPerosanaTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Collections/animale/Animal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Collections/animale/CompareAnimalByDenumire.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Collections/animale/CompareAnimalByNume.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Collections/animale/CompareAnimalBySex.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Collections/animale/ControlAnimal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Collections/animale/Sex.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Collections/animale/data/animale.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Collections/persoane/ComparePersoanaByAdresa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Collections/persoane/ComparePersoanaByNume.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Collections/persoane/ComparePersoanaByPrenume.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Collections/persoane/ControlPerosana.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Collections/persoane/Persoana.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Collections/persoane/data/persoane.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/collection/List.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/Collections/masini/ControlMasiniTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Collections/masini/ControlMasiniTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/Collections/produse/ControllerProduseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Collections/produse/ControllerProduseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/ControllerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Collections/masini/CompareMasiniByMarca.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collections/masini/CompareMasiniByMarca.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Collections/masini/CompareMasiniByModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collections/masini/CompareMasiniByModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Collections/masini/CompareMasiniByPret.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collections/masini/CompareMasiniByPret.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Collections/masini/ControlMasini.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collections/masini/ControlMasini.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Collections/masini/Masina.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collections/masini/Masina.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Collections/masini/data/masini.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collections/masini/data/masini.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Collections/produse/ControllerProduse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collections/produse/ControllerProduse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Collections/animale/ControlAnimalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/collections/animale/ControlAnimalTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Collections/masini/ControlMasiniTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/collections/masini/ControlMasiniTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Collections/persoane/ControlPerosanaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/collections/persoane/ControlPerosanaTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Collections/produse/ControllerProduseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/collections/produse/ControllerProduseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Collections/animale/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/collections/animale/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Collections/animale/CompareAnimalByDenumire.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/collections/animale/CompareAnimalByDenumire.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Collections/animale/CompareAnimalByNume.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/collections/animale/CompareAnimalByNume.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Collections/animale/CompareAnimalBySex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/collections/animale/CompareAnimalBySex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Collections/animale/ControlAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/collections/animale/ControlAnimal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Collections/animale/Sex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/collections/animale/Sex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Collections/animale/data/animale.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/collections/animale/data/animale.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Collections/masini/CompareMasiniByMarca.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/collections/masini/CompareMasiniByMarca.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Collections/masini/CompareMasiniByModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/collections/masini/CompareMasiniByModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Collections/masini/CompareMasiniByPret.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/collections/masini/CompareMasiniByPret.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Collections/masini/ControlMasini.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/collections/masini/ControlMasini.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Collections/masini/Masina.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/collections/masini/Masina.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Collections/masini/data/masini.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/collections/masini/data/masini.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Collections/persoane/ComparePersoanaByAdresa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/collections/persoane/ComparePersoanaByAdresa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Collections/persoane/ComparePersoanaByNume.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/collections/persoane/ComparePersoanaByNume.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Collections/persoane/ComparePersoanaByPrenume.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/collections/persoane/ComparePersoanaByPrenume.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Collections/persoane/ControlPerosana.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/collections/persoane/ControlPerosana.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Collections/persoane/Persoana.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/collections/persoane/Persoana.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Collections/persoane/data/persoane.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/collections/persoane/data/persoane.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Collections/produse/CompareProductByDenumire.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/collections/produse/CompareProductByDenumire.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Collections/produse/CompareProductByMarca.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/collections/produse/CompareProductByMarca.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Collections/produse/CompareProductByModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/collections/produse/CompareProductByModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Collections/produse/CompareProductByPret.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/collections/produse/CompareProductByPret.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Collections/produse/CompareProductByStock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/collections/produse/CompareProductByStock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Collections/produse/ControllerProduse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/collections/produse/ControllerProduse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Collections/produse/Produs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/collections/produse/Produs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Collections/produse/data/produse.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/collections/produse/data/produse.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,8 +46,8 @@
       <list>
         <option value="Interface" />
         <option value="Enum" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -67,7 +74,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/mycode/oop/incapsualrea/proiectScoala&quot;
+    &quot;last_opened_file_path&quot;: &quot;C:/mycode/collections/Initiere&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -85,66 +92,66 @@
       <recent name="Collections.produse" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ControlPerosanaTest.byPrenumeTest">
-    <configuration name="ControlAnimalTest.bySexTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Initiere" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Collections.animale.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Collections.animale" />
-      <option name="MAIN_CLASS_NAME" value="Collections.animale.ControlAnimalTest" />
-      <option name="METHOD_NAME" value="bySexTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.ControlAnimalTest.findByNameTest">
     <configuration name="ControlAnimalTest.controlAnimalTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Initiere" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Collections.animale.*" />
+          <option name="PATTERN" value="collections.animale.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Collections.animale" />
-      <option name="MAIN_CLASS_NAME" value="Collections.animale.ControlAnimalTest" />
+      <option name="MAIN_CLASS_NAME" value="collections.animale.ControlAnimalTest" />
       <option name="METHOD_NAME" value="controlAnimalTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ControlPerosanaTest.ByNumeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ControlAnimalTest.findByAgeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Initiere" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Collections.persoane.*" />
+          <option name="PATTERN" value="collections.animale.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Collections.persoane" />
-      <option name="MAIN_CLASS_NAME" value="Collections.persoane.ControlPerosanaTest" />
-      <option name="METHOD_NAME" value="ByNumeTest" />
+      <option name="PACKAGE_NAME" value="Collections.animale" />
+      <option name="MAIN_CLASS_NAME" value="collections.animale.ControlAnimalTest" />
+      <option name="METHOD_NAME" value="findByAgeTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ControlPerosanaTest.byAdresaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ControlAnimalTest.findByNameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Initiere" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Collections.persoane.*" />
+          <option name="PATTERN" value="collections.animale.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Collections.animale" />
+      <option name="MAIN_CLASS_NAME" value="collections.animale.ControlAnimalTest" />
+      <option name="METHOD_NAME" value="findByNameTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ControlPerosanaTest.afisare" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Initiere" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="collections.persoane.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Collections.persoane" />
-      <option name="MAIN_CLASS_NAME" value="Collections.persoane.ControlPerosanaTest" />
-      <option name="METHOD_NAME" value="byAdresaTest" />
+      <option name="MAIN_CLASS_NAME" value="collections.persoane.ControlPerosanaTest" />
+      <option name="METHOD_NAME" value="afisare" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -154,12 +161,12 @@
       <module name="Initiere" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Collections.persoane.*" />
+          <option name="PATTERN" value="collections.persoane.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Collections.persoane" />
-      <option name="MAIN_CLASS_NAME" value="Collections.persoane.ControlPerosanaTest" />
+      <option name="MAIN_CLASS_NAME" value="collections.persoane.ControlPerosanaTest" />
       <option name="METHOD_NAME" value="byPrenumeTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -168,11 +175,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ControlPerosanaTest.byPrenumeTest" />
-        <item itemvalue="JUnit.ControlPerosanaTest.ByNumeTest" />
-        <item itemvalue="JUnit.ControlPerosanaTest.byAdresaTest" />
+        <item itemvalue="JUnit.ControlAnimalTest.findByNameTest" />
+        <item itemvalue="JUnit.ControlAnimalTest.findByAgeTest" />
         <item itemvalue="JUnit.ControlAnimalTest.controlAnimalTest" />
-        <item itemvalue="JUnit.ControlAnimalTest.bySexTest" />
+        <item itemvalue="JUnit.ControlPerosanaTest.afisare" />
+        <item itemvalue="JUnit.ControlPerosanaTest.byPrenumeTest" />
       </list>
     </recent_temporary>
   </component>

@@ -1,4 +1,5 @@
-    package Collections.masini;
+    package collections.masini;
+
 
     import java.util.Comparator;
 

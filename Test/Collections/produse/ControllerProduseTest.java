@@ -1,4 +1,4 @@
-package Collections.produse;
+package collections.produse;
 
 import org.junit.jupiter.api.Test;
 
