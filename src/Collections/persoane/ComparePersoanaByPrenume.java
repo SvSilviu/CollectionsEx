@@ -1,4 +1,4 @@
-package Collections.persoane;
+package collections.persoane;
 
 import java.util.Comparator;
 

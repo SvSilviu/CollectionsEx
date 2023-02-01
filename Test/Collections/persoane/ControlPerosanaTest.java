@@ -1,4 +1,4 @@
-package Collections.persoane;
+package collections.persoane;
 
 import org.junit.jupiter.api.Test;
 
@@ -57,6 +57,13 @@ class ControlPerosanaTest {
 //        assertEquals(-1,comparePersoanaByPrenume.compare(persoana1,persoana));
         assertEquals(persoana, listaDePersoane.get(1));
         assertEquals(persoana1, listaDePersoane.get(0));
+
+    }
+    @Test
+    public void afisare(){
+
+        ControlPerosana controlPerosana = new ControlPerosana();
+        controlPerosana.afisare();
 
     }
 

@@ -1,4 +1,4 @@
-package Collections.masini;
+package collections.masini;
 
 import java.io.File;
 import java.util.ArrayList;

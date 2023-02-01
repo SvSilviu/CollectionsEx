@@ -1,4 +1,4 @@
-package Collections.produse;
+package collections.produse;
 
 public class Produs implements Comparable<Produs> {
 

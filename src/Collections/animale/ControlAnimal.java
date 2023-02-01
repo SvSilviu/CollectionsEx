@@ -1,4 +1,4 @@
-package Collections.animale;
+package collections.animale;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -9,6 +9,11 @@ public class ControlAnimal {
 
     private Scanner scanner;
     private ArrayList<Animal> animals;
+
+
+    public ControlAnimal(ArrayList<Animal> animals) {
+        this.animals = animals;
+    }
 
     public ControlAnimal() {
 
@@ -46,11 +51,13 @@ public class ControlAnimal {
         return null;
     }
 
-    public Animal findByNume(String nume) {
+    public Animal findByDenumire(String nume) {
 
-        int pozitie = Collections.binarySearch(animals, new Animal(nume), new CompareAnimalByNume());
+        Collections.sort(animals,new CompareAnimalByDenumire());
+
+        int pozitie = Collections.binarySearch(animals, new Animal(nume,Sex.FEMELA,3,""), new CompareAnimalByDenumire());
         if (pozitie != -1) {
-            this.animals.get(pozitie);
+            return  animals.get(pozitie);
         }
         return null;
     }
@@ -63,9 +70,6 @@ public class ControlAnimal {
         return null;
     }
 
-    public void findByAge() {
-        Collections.max(animals, Animal::compareTo);
-    }
 
     public void shuffle(int a, int b) {
 
@@ -80,5 +84,10 @@ public class ControlAnimal {
         for (Animal animal : animals) {
             System.out.println(animal);
         }
+    }
+
+    public int size(){
+
+        return  this.animals.size();
     }
 }

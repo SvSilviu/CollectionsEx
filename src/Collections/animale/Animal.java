@@ -1,4 +1,4 @@
-package Collections.animale;
+package collections.animale;
 
 public class Animal implements Comparable<Animal> {
 
@@ -14,11 +14,11 @@ public class Animal implements Comparable<Animal> {
         this.nume = nume;
     }
 
-    public Animal(String text){
+    public Animal(String text) {
 
-        String []proprietati = text.split(",");
-        this.denumire=proprietati[0];
-        this.nume=proprietati[1];
+        String[] proprietati = text.split(",");
+        this.denumire = proprietati[0];
+        this.nume = proprietati[1];
         this.sex = Sex.valueOf(proprietati[2]);
         this.ani = Integer.parseInt(proprietati[3]);
     }

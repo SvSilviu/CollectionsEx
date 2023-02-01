@@ -1,4 +1,4 @@
-package Collections.animale;
+package collections.animale;
 
 import java.util.Comparator;
 

@@ -1,4 +1,4 @@
-package Collections.masini;
+package collections.masini;
 
 public class Masina implements Comparable<Masina>{
 
@@ -7,6 +7,8 @@ public class Masina implements Comparable<Masina>{
     private int an;
     private double pret;
 
+
+    
     public Masina(String marca, String model, int an, double pret) {
         this.marca = marca;
         this.model = model;

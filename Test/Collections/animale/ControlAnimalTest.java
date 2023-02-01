@@ -1,49 +1,51 @@
-package Collections.animale;
+package collections.animale;
 
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class ControlAnimalTest {
 
-@Test
-    public void byDenumireTest(){
+    @Test
+    public void byDenumireTest() {
 
-    Animal animal = new Animal("Magar",Sex.MASCUL,4,"Donkey");
-    Animal animal1 = new Animal("Dragon",Sex.FEMELA,12,"Fifi");
-
-
-    ArrayList<Animal> listaAnimalelor = new ArrayList<>();
-    listaAnimalelor.add(animal);
-    listaAnimalelor.add(animal1);
+        Animal animal = new Animal("Magar", Sex.MASCUL, 4, "Donkey");
+        Animal animal1 = new Animal("Dragon", Sex.FEMELA, 12, "Fifi");
 
 
-    listaAnimalelor.sort(new CompareAnimalByDenumire());
-
-    assertEquals(animal,listaAnimalelor.get(1));
-    assertEquals(animal1,listaAnimalelor.get(0));
-
-}
-@Test
-    public void byNumeTest(){
-
-    Animal animal = new Animal("Magar",Sex.MASCUL,4,"Donkey");
-    Animal animal1 = new Animal("Dragon",Sex.FEMELA,12,"Fifi");
+        ArrayList<Animal> listaAnimalelor = new ArrayList<>();
+        listaAnimalelor.add(animal);
+        listaAnimalelor.add(animal1);
 
 
-    ArrayList<Animal> listaAnimalelor = new ArrayList<>();
-    listaAnimalelor.add(animal);
-    listaAnimalelor.add(animal1);
+        listaAnimalelor.sort(new CompareAnimalByDenumire());
 
-    listaAnimalelor.sort(new CompareAnimalByNume());
+        assertEquals(animal, listaAnimalelor.get(1));
+        assertEquals(animal1, listaAnimalelor.get(0));
 
-    assertEquals(animal,listaAnimalelor.get(1));
-    assertEquals(animal1,listaAnimalelor.get(0));
-}
-@Test
-    public void byAniTest(){
+    }
+
+    @Test
+    public void byNumeTest() {
+
+        Animal animal = new Animal("Magar", Sex.MASCUL, 4, "Donkey");
+        Animal animal1 = new Animal("Dragon", Sex.FEMELA, 12, "Fifi");
+
+
+        ArrayList<Animal> listaAnimalelor = new ArrayList<>();
+        listaAnimalelor.add(animal);
+        listaAnimalelor.add(animal1);
+
+        listaAnimalelor.sort(new CompareAnimalByNume());
+
+        assertEquals(animal, listaAnimalelor.get(1));
+        assertEquals(animal1, listaAnimalelor.get(0));
+    }
+
+    @Test
+    public void byAniTest() {
 
 //    Animal animal = new Animal("Magar",Sex.MASCUL,4,"Donkey");
 //    Animal animal1 = new Animal("Dragon",Sex.FEMELA,12,"Fifi");
@@ -54,34 +56,56 @@ class ControlAnimalTest {
 //    listaAnimalelor.add(animal1);
 //
 //    listaAnimalelor.sort(new ControlAnimal().findByAge());
-}
-@Test
-    public void bySexTest(){
+    }
 
-    Animal animal = new Animal("Magar",Sex.MASCUL,4,"Donkey");
-    Animal animal1 = new Animal("Dragon",Sex.FEMELA,12,"Fifi");
+    @Test
+    public void bySexTest() {
 
-    CompareAnimalBySex compareAnimalBySex = new CompareAnimalBySex();
+        Animal animal = new Animal("Magar", Sex.MASCUL, 4, "Donkey");
+        Animal animal1 = new Animal("Dragon", Sex.FEMELA, 12, "Fifi");
 
-    assertEquals(-1,compareAnimalBySex.compare(animal1,animal));
-    assertEquals(1,compareAnimalBySex.compare(animal,animal1));
+        CompareAnimalBySex compareAnimalBySex = new CompareAnimalBySex();
 
-}
-@Test
-    public void controlAnimalTest(){
-//
-//    ControlAnimal controlAnimal = new ControlAnimal();
-//    Animal animal = new Animal("Magar",Sex.MASCUL,4,"Donkey");
-//    Animal animal1 = new Animal("Dragon",Sex.FEMELA,12,"Fifi");
-//
-//    ArrayList<Animal> listaAnimalelor = new ArrayList<>();
-//    listaAnimalelor.add(animal);
-//    listaAnimalelor.add(animal1);
-//
-//
-//
-//    assertEquals("Caine",listaAnimalelor.get(0).getNume());
+        assertEquals(-1, compareAnimalBySex.compare(animal1, animal));
+        assertEquals(1, compareAnimalBySex.compare(animal, animal1));
 
-}
+    }
+
+    @Test
+    public void controlAnimalTest() {
+
+
+        Animal animal = new Animal("Magar", Sex.MASCUL, 4, "Donkey");
+        Animal animal1 = new Animal("Dragon", Sex.FEMELA, 12, "Fifi");
+
+        ArrayList<Animal> listaAnimalelor = new ArrayList<>();
+
+        listaAnimalelor.add(animal);
+        listaAnimalelor.add(animal1);
+
+        ControlAnimal controlAnimal = new ControlAnimal(listaAnimalelor);
+
+
+        assertEquals(2, controlAnimal.size());
+
+    }
+
+    @Test
+    public void findByNameTest() {
+
+        Animal animal = new Animal("Magar", Sex.MASCUL, 4, "Donkey");
+        Animal animal1 = new Animal("Dragon", Sex.FEMELA, 12, "Fifi");
+
+
+        ArrayList<Animal> listaAnimalelor = new ArrayList<>();
+
+        listaAnimalelor.add(animal);
+        listaAnimalelor.add(animal1);
+
+        ControlAnimal controlAnimal = new ControlAnimal(listaAnimalelor);
+
+        assertEquals("Magar", controlAnimal.findByDenumire("Magar").getDenumire());
+
+    }
 
 }

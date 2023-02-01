@@ -1,4 +1,4 @@
-package Collections.persoane;
+package collections.persoane;
 
 import java.io.File;
 import java.util.ArrayList;
