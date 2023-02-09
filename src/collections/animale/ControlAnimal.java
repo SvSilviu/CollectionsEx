@@ -23,7 +23,6 @@ public class ControlAnimal {
 
     public void load() {
 
-        this.animals.clear();
 
         try {
             File file = new File("C:\\mycode\\collections\\Initiere\\src\\Collections\\animale\\data\\animale.txt");
@@ -38,6 +37,7 @@ public class ControlAnimal {
     }
 
     public void afisare() {
+
         for (Animal a : animals) {
             System.out.println(a);
         }
@@ -55,11 +55,11 @@ public class ControlAnimal {
 
     public Animal findByDenumire(String nume) {
 
-        Collections.sort(animals,new CompareAnimalByDenumire());
+        Collections.sort(animals, new CompareAnimalByDenumire());
 
-        int pozitie = Collections.binarySearch(animals, new Animal(nume,Sex.FEMELA,3,""), new CompareAnimalByDenumire());
+        int pozitie = Collections.binarySearch(animals, new Animal(nume, Sex.FEMELA, 3, ""), new CompareAnimalByDenumire());
         if (pozitie != -1) {
-            return  animals.get(pozitie);
+            return animals.get(pozitie);
         }
         return null;
     }
@@ -88,8 +88,8 @@ public class ControlAnimal {
         }
     }
 
-    public int size(){
+    public int size() {
 
-        return  this.animals.size();
+        return this.animals.size();
     }
 }

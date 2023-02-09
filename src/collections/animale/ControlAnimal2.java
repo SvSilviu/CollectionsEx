@@ -1,10 +1,7 @@
 package collections.animale;
 
 import java.io.File;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class ControlAnimal2 {
 
@@ -42,10 +39,19 @@ public class ControlAnimal2 {
         Iterator<Animal> iterator = animalList.iterator();
         while (iterator.hasNext()) {
             Animal a = iterator.next();
-            System.out.println(a.getDenumire());
+            System.out.println(a);
         }
 
 
+    }
+    public Animal findByDenumire(String denumire) {
+
+        Collections.sort(animalList, new CompareAnimalByDenumire());
+        int pozitie = Collections.binarySearch(animalList, new Animal(denumire,Sex.FEMELA, 0, ""), new CompareAnimalByDenumire());
+        if (pozitie != -1) {
+            return this.animalList.get(pozitie);
+        }
+        return null;
     }
 
 }
