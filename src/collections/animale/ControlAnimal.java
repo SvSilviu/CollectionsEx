@@ -44,6 +44,8 @@ public class ControlAnimal {
     }
 
     public Animal findByDenumire(String denumire, Sex sex) {
+
+        Collections.sort(animals, new CompareAnimalByDenumire());
         int pozitie = Collections.binarySearch(animals, new Animal(denumire, sex, 0, ""), new CompareAnimalByDenumire());
         if (pozitie != -1) {
             return this.animals.get(pozitie);

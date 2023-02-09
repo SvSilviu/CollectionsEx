@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="375c918d-e063-4d85-b68f-f569594f9d52" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/collection/List.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/collections/animale/ControlAnimal2Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/collections/animale/ControlAnimal2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test/Collections/animale/ControlAnimalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/collections/animale/ControlAnimalTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test/Collections/masini/ControlMasiniTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/collections/masini/ControlMasiniTest.java" afterDir="false" />
@@ -35,6 +36,7 @@
       <change beforePath="$PROJECT_DIR$/src/Collections/produse/ControllerProduse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/collections/produse/ControllerProduse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Collections/produse/Produs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/collections/produse/Produs.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Collections/produse/data/produse.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/collections/produse/data/produse.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/collection/List.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/collection/Lista.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,8 +48,8 @@
       <list>
         <option value="Interface" />
         <option value="Enum" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -63,20 +65,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/mycode/collections/Initiere&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_opened_file_path": "C:/mycode/collections/Initiere"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -86,14 +88,15 @@
       <recent name="Collections.masini" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="collections.animale" />
+      <recent name="collection" />
       <recent name="Collections.persoane" />
       <recent name="Collections.animale" />
       <recent name="Collections.masini" />
-      <recent name="Collections.produse" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ControlAnimalTest.findByNameTest">
-    <configuration name="ControlAnimalTest.controlAnimalTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ListaTest.ex4Test">
+    <configuration name="ControlAnimal2Test.afisareTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Initiere" />
       <extension name="coverage">
         <pattern>
@@ -101,25 +104,9 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Collections.animale" />
-      <option name="MAIN_CLASS_NAME" value="collections.animale.ControlAnimalTest" />
-      <option name="METHOD_NAME" value="controlAnimalTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ControlAnimalTest.findByAgeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Initiere" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="collections.animale.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Collections.animale" />
-      <option name="MAIN_CLASS_NAME" value="collections.animale.ControlAnimalTest" />
-      <option name="METHOD_NAME" value="findByAgeTest" />
+      <option name="PACKAGE_NAME" value="collections.animale" />
+      <option name="MAIN_CLASS_NAME" value="collections.animale.ControlAnimal2Test" />
+      <option name="METHOD_NAME" value="afisareTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -141,33 +128,49 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ControlPerosanaTest.afisare" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ListaTest.ex1Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Initiere" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="collections.persoane.*" />
+          <option name="PATTERN" value="collection.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Collections.persoane" />
-      <option name="MAIN_CLASS_NAME" value="collections.persoane.ControlPerosanaTest" />
-      <option name="METHOD_NAME" value="afisare" />
+      <option name="PACKAGE_NAME" value="collection" />
+      <option name="MAIN_CLASS_NAME" value="collection.ListaTest" />
+      <option name="METHOD_NAME" value="ex1Test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ControlPerosanaTest.byPrenumeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ListaTest.ex3Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Initiere" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="collections.persoane.*" />
+          <option name="PATTERN" value="collection.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Collections.persoane" />
-      <option name="MAIN_CLASS_NAME" value="collections.persoane.ControlPerosanaTest" />
-      <option name="METHOD_NAME" value="byPrenumeTest" />
+      <option name="PACKAGE_NAME" value="collection" />
+      <option name="MAIN_CLASS_NAME" value="collection.ListaTest" />
+      <option name="METHOD_NAME" value="ex3Test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ListaTest.ex4Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Initiere" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="collection.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="collection" />
+      <option name="MAIN_CLASS_NAME" value="collection.ListaTest" />
+      <option name="METHOD_NAME" value="ex4Test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -175,11 +178,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ListaTest.ex4Test" />
+        <item itemvalue="JUnit.ControlAnimal2Test.afisareTest" />
+        <item itemvalue="JUnit.ListaTest.ex3Test" />
+        <item itemvalue="JUnit.ListaTest.ex1Test" />
         <item itemvalue="JUnit.ControlAnimalTest.findByNameTest" />
-        <item itemvalue="JUnit.ControlAnimalTest.findByAgeTest" />
-        <item itemvalue="JUnit.ControlAnimalTest.controlAnimalTest" />
-        <item itemvalue="JUnit.ControlPerosanaTest.afisare" />
-        <item itemvalue="JUnit.ControlPerosanaTest.byPrenumeTest" />
       </list>
     </recent_temporary>
   </component>

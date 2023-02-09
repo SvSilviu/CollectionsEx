@@ -57,7 +57,7 @@ public class Animal implements Comparable<Animal> {
 
     @Override
     public String toString() {
-        return "Denumire -" + this.denumire + "\n" + "Nume - " + this.nume + "\n" + "Sex - " + sex + "\n" + "Varsta -" + ani;
+        return "Denumire -" + this.denumire + "\n" + "Nume - " + this.nume + "\n" + "Sex - " + sex + "\n" + "Varsta :" + ani + "\n";
     }
 
     @Override

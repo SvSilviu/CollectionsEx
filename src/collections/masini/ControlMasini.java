@@ -45,6 +45,7 @@ public class ControlMasini {
     }
 
     public Masina findByMarca(String marca) {
+        Collections.sort(masini,new CompareMasiniByMarca());
         int pozitie = Collections.binarySearch(masini, new Masina(marca, "", 0, 0), new CompareMasiniByMarca());
         if (pozitie != -1) {
             return this.masini.get(pozitie);
