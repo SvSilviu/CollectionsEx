@@ -107,5 +107,10 @@ class ControlAnimalTest {
         assertEquals("Magar", controlAnimal.findByDenumire("Magar").getDenumire());
 
     }
+@Test
+    void afisareTest(){
 
+        ControlAnimal controlAnimal = new ControlAnimal();
+        controlAnimal.afisare();
+    }
 }

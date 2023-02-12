@@ -67,7 +67,7 @@ public class Animal implements Comparable<Animal> {
     }
 
     @Override
-    public int compareTo(Animal o) {
+    public int  compareTo(Animal o) {
         if (this.ani > o.ani) {
             return 1;
         } else if (this.ani < o.ani) {
