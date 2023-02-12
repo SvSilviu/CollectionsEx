@@ -1,26 +1,33 @@
 package collections.animale;
 
 import java.io.File;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Scanner;
 
 public class ControlAnimal2 {
 
     private Scanner scanner;
     private List<Animal> animalList;
 
-    public ControlAnimal2(List<Animal> animals) {
-        this.animalList = animals;
+    public ControlAnimal2() {
+        this.animalList = new ArrayList<>();
+        this.load();
     }
 
-    public ControlAnimal2() {
 
-        animalList = new ArrayList<>();
+    public ControlAnimal2(List<Animal> animals) {
 
+        animalList = animals;
+
+    }
+
+    public List<Animal> getAnimalList() {
+        return animalList;
     }
 
     public void load() {
-
-        this.animalList.clear();
 
         try {
             File file = new File("C:\\mycode\\collections\\Initiere\\src\\collections\\animale\\data\\animale.txt");
@@ -44,14 +51,97 @@ public class ControlAnimal2 {
 
 
     }
+
+
     public Animal findByDenumire(String denumire) {
 
-        Collections.sort(animalList, new CompareAnimalByDenumire());
-        int pozitie = Collections.binarySearch(animalList, new Animal(denumire,Sex.FEMELA, 0, ""), new CompareAnimalByDenumire());
-        if (pozitie != -1) {
-            return this.animalList.get(pozitie);
+        Iterator<Animal> iterator = animalList.iterator();
+
+        while (iterator.hasNext()) {
+            Animal animal = iterator.next();
+            if (animal.getDenumire().equals(denumire)) {
+
+            }
+
+        }
+        return new Animal(denumire, Sex.FEMELA, 0, "");
+    }
+
+
+    public Animal celMaiInVarsta() {
+
+        Iterator<Animal> iterator = animalList.iterator();
+        Animal maxim = animalList.get(0);
+        while (iterator.hasNext()) {
+            Animal animal = iterator.next();
+            if (animal.compareTo(maxim) > 0) {
+                maxim = animal;
+            }
+        }
+        return maxim;
+    }
+
+    public Animal penultimulCaVarsta() {
+
+        Iterator<Animal> iterator = animalList.iterator();
+        Animal penultimul = new Animal("", Sex.FEMELA, 0, "");
+        Animal maxim = celMaiInVarsta();
+        while (iterator.hasNext()) {
+            Animal animal = iterator.next();
+            if (penultimul.compareTo(animal) < 0 && animal.compareTo(maxim) < 0)
+                penultimul = animal;
+        }
+        return penultimul;
+    }
+
+    public Animal findByNume(String nume) {
+
+        Iterator<Animal> iterator = animalList.iterator();
+        while (iterator.hasNext()) {
+            Animal animal = iterator.next();
+            if (animal.getNume().equals(nume)) {
+
+            }
+
+        }
+        return new Animal("", Sex.FEMELA, 0, nume);
+    }
+
+    public void createAnimal(Animal animal) {
+
+        animalList.add(animal);
+    }
+
+    public List<Animal> readAnimal() {
+
+        Iterator<Animal> iterator = animalList.iterator();
+        while (iterator.hasNext()) {
+            Animal animal = iterator.next();
+            System.out.println(animal.toString());
         }
         return null;
+    }
+
+    public void updateAnimal(Animal animal, String denumire) {
+
+        Iterator<Animal> iterator = animalList.iterator();
+        while (iterator.hasNext()) {
+            Animal animalActual = iterator.next();
+            if (animalActual.equals(animal)) {
+                animalActual.setDenumire(denumire);
+            }
+        }
+    }
+
+    public void deleteAnimal(Animal animal) {
+
+        Iterator<Animal> iterator = animalList.iterator();
+        while (iterator.hasNext()) {
+            Animal animalActual = iterator.next();
+            if (animalActual.equals(animal)) {
+                iterator.remove();
+            }
+        }
     }
 
 }
