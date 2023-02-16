@@ -1,9 +1,9 @@
 package collections.masini;
 
 import java.io.File;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Scanner;
+import java.io.PrintWriter;
+import java.security.PrivateKey;
+import java.util.*;
 
 public class ControlMasini {
 
@@ -16,6 +16,7 @@ public class ControlMasini {
         this.masini = new ArrayList<>();
         this.load();
     }
+
 
     public void load() {
 
@@ -33,7 +34,6 @@ public class ControlMasini {
         }
 
     }
-
     public void afisare() {
         for (Masina m : masini) {
             System.out.println(m);
@@ -72,6 +72,8 @@ public class ControlMasini {
             System.out.println(m);
         }
     }
+
+
 
 }
 

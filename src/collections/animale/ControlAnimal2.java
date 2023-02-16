@@ -49,7 +49,6 @@ public class ControlAnimal2 {
             System.out.println(a);
         }
 
-
     }
 
 
@@ -112,23 +111,48 @@ public class ControlAnimal2 {
         animalList.add(animal);
     }
 
-    public List<Animal> readAnimal() {
+    public void readAnimal() {
 
         Iterator<Animal> iterator = animalList.iterator();
         while (iterator.hasNext()) {
             Animal animal = iterator.next();
             System.out.println(animal.toString());
         }
-        return null;
+
     }
 
-    public void updateAnimal(Animal animal, String denumire) {
+//    public void updateAnimal(Animal animal, String denumire) {
+//
+//        Iterator<Animal> iterator = animalList.iterator();
+//        while (iterator.hasNext()) {
+//            Animal animalActual = iterator.next();
+//            if (animalActual.equals(animal)) {
+//                animalActual.setDenumire(denumire);
+//            }
+//        }
+//    }
+
+    public void updateAnimal(Animal animal) {
 
         Iterator<Animal> iterator = animalList.iterator();
         while (iterator.hasNext()) {
-            Animal animalActual = iterator.next();
-            if (animalActual.equals(animal)) {
-                animalActual.setDenumire(denumire);
+            Animal a = iterator.next();
+            if (a.equals(animal)) {
+
+                if (!animal.getNume().equals("")) {
+
+                    a.setNume(animal.getNume());
+                }
+
+                if (animal.getAni() != 0) {
+
+                    a.setAni(animal.getAni());
+
+                }
+                if (animal.getSex() != Sex.INIT) {
+
+                    a.setSex(animal.getSex());
+                }
             }
         }
     }
@@ -145,5 +169,3 @@ public class ControlAnimal2 {
     }
 
 }
-
-

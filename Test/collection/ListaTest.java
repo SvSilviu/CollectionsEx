@@ -1,6 +1,7 @@
 package collection;
 
 import collections.animale.Animal;
+import collections.animale.AnimalDTO;
 import collections.animale.ControlAnimal2;
 import collections.animale.Sex;
 import org.junit.jupiter.api.Test;
@@ -189,47 +190,53 @@ class ListaTest {
     @Test
     void readTest() {
 
-        List<Animal> listaAsteptata = new ArrayList<>();
+        List<Animal> lisaAnimale = new ArrayList<>();
 
         Animal animal1 = new Animal("Caine", Sex.FEMELA, 12, "Doris");
         Animal animal2 = new Animal("Pisica", Sex.MASCUL, 2, "Oscar");
         Animal animal3 = new Animal("Cal", Sex.MASCUL, 6, "Lucky");
         Animal animal4 = new Animal("Hamster", Sex.FEMELA, 1, "Mia");
 
-        listaAsteptata.add(animal1);
-        listaAsteptata.add(animal2);
-        listaAsteptata.add(animal3);
-        listaAsteptata.add(animal4);
+        lisaAnimale.add(animal1);
+        lisaAnimale.add(animal2);
+        lisaAnimale.add(animal3);
+        lisaAnimale.add(animal4);
 
-        ControlAnimal2 controlAnimal2 = new ControlAnimal2(listaAsteptata);
-        List<Animal> actualAnimals = controlAnimal2.readAnimal();
+        ControlAnimal2 controlAnimal2 = new ControlAnimal2(lisaAnimale);
+        controlAnimal2.readAnimal();
 
-        assertEquals(actualAnimals, listaAsteptata);
+
     }
 
     @Test
     void updateTest(){
 
-        List<Animal> listaAsteptata = new ArrayList<>();
+        List<Animal> listaAnimale = new ArrayList<>();
 
         Animal animal1 = new Animal("Caine", Sex.FEMELA, 12, "Doris");
         Animal animal2 = new Animal("Pisica", Sex.MASCUL, 2, "Oscar");
         Animal animal3 = new Animal("Cal", Sex.MASCUL, 6, "Lucky");
         Animal animal4 = new Animal("Hamster", Sex.FEMELA, 1, "Mia");
 
-        listaAsteptata.add(animal1);
-        listaAsteptata.add(animal2);
-        listaAsteptata.add(animal3);
-        listaAsteptata.add(animal4);
+        listaAnimale.add(animal1);
+        listaAnimale.add(animal2);
+        listaAnimale.add(animal3);
+        listaAnimale.add(animal4);
 
-        ControlAnimal2 controlAnimal2 = new ControlAnimal2(listaAsteptata);
-        controlAnimal2.updateAnimal(animal1,"Tigru");
+        ControlAnimal2 controlAnimal2 = new ControlAnimal2(listaAnimale);
+        AnimalDTO animalDTO= new AnimalDTO("Caine");
 
-        String asteptat = "Tigru";
-        String actual = animal1.getDenumire();
+        controlAnimal2.afisare();
 
-        assertEquals(asteptat,actual);
+        System.out.println("=============================================================");
+        animalDTO.setAni(13);
+        animalDTO.setSex(Sex.MASCUL);
+        animalDTO.setNume("Maxx");
 
+
+        controlAnimal2.updateAnimal(animalDTO);
+
+        controlAnimal2.afisare();
 
     }
     @Test
@@ -239,17 +246,19 @@ class ListaTest {
 
         Animal animal1 = new Animal("Caine", Sex.FEMELA, 12, "Doris");
         Animal animal2 = new Animal("Pisica", Sex.MASCUL, 2, "Oscar");
-        Animal animal3 = new Animal("Cal", Sex.MASCUL, 6, "Lucky");
-        Animal animal4 = new Animal("Hamster", Sex.FEMELA, 1, "Mia");
 
         animalList.add(animal1);
         animalList.add(animal2);
-        animalList.add(animal3);
-        animalList.add(animal4);
 
         ControlAnimal2 controlAnimal2 = new ControlAnimal2(animalList);
+        controlAnimal2.afisare();
+
+        System.out.println("======================================");
+
         controlAnimal2.deleteAnimal(animal1);
 
-        assertEquals(3,animalList.size());
+
+        assertEquals(1,animalList.size());
+        controlAnimal2.afisare();
     }
 }

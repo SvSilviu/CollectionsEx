@@ -3,6 +3,8 @@ package collections.masini;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -40,44 +42,46 @@ class ControlMasiniTest {
 
         assertEquals(1, compareMasiniByMarca.compare(masina1, masina));
         assertEquals(0, compareMasiniByMarca.compare(masina2, masina3));
-        assertEquals(-1,compareMasiniByMarca.compare(masina2,masina1));
+        assertEquals(-1, compareMasiniByMarca.compare(masina2, masina1));
 
 
     }
+
     @Test
-    public void byModelTest(){
+    public void byModelTest() {
 
         CompareMasiniByModel compareMasiniByModel = new CompareMasiniByModel();
 
         Masina masina = new Masina("audi", "a8", 2020, 60);
         Masina masina1 = new Masina("Dacia", "logan", 2020, 52);
 
-       ArrayList<Masina> masinaArrayList = new ArrayList<>();
-       masinaArrayList.add(masina);
-       masinaArrayList.add(masina1);
+        ArrayList<Masina> masinaArrayList = new ArrayList<>();
+        masinaArrayList.add(masina);
+        masinaArrayList.add(masina1);
 
 
-       masinaArrayList.sort(new CompareMasiniByModel());
+        masinaArrayList.sort(new CompareMasiniByModel());
 
-       assertEquals(masina,masinaArrayList.get(0));
-       assertEquals(masina1,masinaArrayList.get(1));
+        assertEquals(masina, masinaArrayList.get(0));
+        assertEquals(masina1, masinaArrayList.get(1));
 
 
     }
+
     @Test
-    public void byPretTest(){
+    public void byPretTest() {
 
         CompareMasiniByPret compareMasiniByPret = new CompareMasiniByPret();
 
         Masina masina = new Masina("audi", "a8", 2020, 60);
         Masina masina1 = new Masina("Dacia", "logan", 2020, 52);
 
-        assertEquals(1,compareMasiniByPret.compare(masina,masina1));
-        assertEquals(-1,compareMasiniByPret.compare(masina1,masina));
+        assertEquals(1, compareMasiniByPret.compare(masina, masina1));
+        assertEquals(-1, compareMasiniByPret.compare(masina1, masina));
     }
 
     @Test
-    public void byAnTest(){
+    public void byAnTest() {
 
         ControlMasini controlMasini = new ControlMasini();
 //        System.out.println(controlMasini.findByMarca("Bmw"));
@@ -86,6 +90,9 @@ class ControlMasiniTest {
 //        controlMasini.schimbareLoc(0,1);
 //        controlMasini.shuffle(1,3);
     }
+
+
+
 
 
 }

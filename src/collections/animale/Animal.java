@@ -2,10 +2,13 @@ package collections.animale;
 
 public class Animal implements Comparable<Animal> {
 
-    private String denumire;
-    private Sex sex;
-    private int ani;
-    private String nume;
+    private String denumire="";
+    private Sex sex=Sex.INIT;
+    private int ani=0;
+    private String nume="";
+
+    public Animal() {
+    }
 
     public Animal(String denumire, Sex sex, int ani, String nume) {
         this.denumire = denumire;
@@ -62,8 +65,7 @@ public class Animal implements Comparable<Animal> {
 
     @Override
     public boolean equals(Object o) {
-        Animal animal = (Animal) o;
-        return this.ani == ((Animal) o).ani && this.nume.equals(((Animal) o).nume);
+        return this.denumire.equals(((Animal) o).denumire);
     }
 
     @Override
