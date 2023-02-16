@@ -1,6 +1,6 @@
 package collections.masini;
 
-public class Masina implements Comparable<Masina>{
+public class Masina implements Comparable<Masina> {
 
     private String marca;
     private String model;
@@ -8,7 +8,6 @@ public class Masina implements Comparable<Masina>{
     private double pret;
 
 
-    
     public Masina(String marca, String model, int an, double pret) {
         this.marca = marca;
         this.model = model;
@@ -17,7 +16,7 @@ public class Masina implements Comparable<Masina>{
     }
 
     public Masina(String text) {
-        String [] proprietati = text.split(",");
+        String[] proprietati = text.split(",");
         this.marca = proprietati[0];
         this.model = proprietati[1];
         this.an = Integer.parseInt(proprietati[2]);
@@ -63,30 +62,25 @@ public class Masina implements Comparable<Masina>{
 
     @Override
     public String toString() {
-        return "masini{" +
-                "marca='" + marca + '\'' +
-                ", model='" + model + '\'' +
-                ", an=" + an +
-                ", pret=" + pret +
-                '}';
+        return "Marca - " + marca + "\n" + "Model - " + model + "\n" + "An de fabricatie - " + an + "\n" + "Pret - " + pret + "\n";
     }
 
     @Override
-    public boolean equals(Object o){
-        Masina m = (Masina) o;
-        return this.pret==((Masina) o).pret&&this.an==((Masina) o).an;
+    public boolean equals(Object o) {
+
+        return this.marca.equals(((Masina) o).marca);
     }
 
     @Override
     public int compareTo(Masina o) {
 
 
-        if(this.an>o.an){
+        if (this.an > o.an) {
 
-            return  1;
-        }else if(this.an<o.an){
+            return 1;
+        } else if (this.an < o.an) {
             return -1;
-        }else
+        } else
             return 0;
 
     }
