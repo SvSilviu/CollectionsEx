@@ -1,19 +1,22 @@
-package collections.masini;
+package dictionar;
 
-public class Masina implements Comparable<Masina> {
+public class Masina {
 
+    private int id;
     private String marca;
     private String model;
     private int an;
     private double pret;
+    private int idPersoana;
 
 
-
-    public Masina(String marca, String model, int an, double pret) {
+    public Masina(String marca, String model, int an, double pret, int idPersoana, int id) {
         this.marca = marca;
         this.model = model;
         this.an = an;
         this.pret = pret;
+        this.idPersoana = idPersoana;
+        this.id = id;
     }
 
     public Masina(String text) {
@@ -22,6 +25,8 @@ public class Masina implements Comparable<Masina> {
         this.model = proprietati[1];
         this.an = Integer.parseInt(proprietati[2]);
         this.pret = Integer.parseInt(proprietati[3]);
+        this.idPersoana = Integer.parseInt(proprietati[4]);
+        this.id = Integer.parseInt(proprietati[5]);
     }
 
     public Masina() {
@@ -49,12 +54,27 @@ public class Masina implements Comparable<Masina> {
         return an;
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public void setAn(int an) {
         this.an = an;
     }
 
     public double getPret() {
         return pret;
+    }
+    public int getIdPersoana() {
+        return idPersoana;
+    }
+
+    public void setIdPersoana(int idPersoana) {
+        this.idPersoana = idPersoana;
     }
 
     public void setPret(double pret) {
@@ -63,26 +83,17 @@ public class Masina implements Comparable<Masina> {
 
     @Override
     public String toString() {
-        return "Marca - " + marca + "\n" + "Model - " + model + "\n" + "An de fabricatie - " + an + "\n" + "Pret - " + pret + "\n";
+        return "Marca - " + marca + "\n" + "Model - " + model + "\n" + "An de fabricatie - " + an +
+                "\n" + "Pret - " + pret + "\n" + "Id Persoana - " + idPersoana + "\n" + "Id - " + id + "\n";
     }
 
     @Override
     public boolean equals(Object o) {
 
-        return this.marca.equals(((Masina) o).marca);
+       Masina m = (Masina) o;
+       return pret==m.pret;
     }
 
-    @Override
-    public int compareTo(Masina o) {
-
-
-        if (this.an > o.an) {
-
-            return 1;
-        } else if (this.an < o.an) {
-            return -1;
-        } else
-            return 0;
-
-    }
 }
+
+
